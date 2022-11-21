@@ -1,0 +1,171 @@
+//
+// Themes
+//
+$background-color: black;
+// $background-color: linear-gradient(to right, red, yellow, green, cyan, blue, violet);
+$global-font: "Nunito", sans-serif;
+//
+// Link colors
+//
+$link: white;
+$visited: #00ffff;
+$focus: #87d1d1;
+$hover: #a5fbfb;
+$active-color: #a5fbfb;
+$active-background: #004f4f;
+$special-characters-color: red;
+//
+//
+//
+.special-sets-colors {
+  color: $special-characters-color;
+  font-weight: bold;
+  font-size: 25px;
+}
+body {
+  background: $background-color;
+}
+//
+// Site fonts
+//
+div[id="link-wrapper"],
+div[id="site-name-wrapper"] {
+  font-family: $global-font;
+}
+//
+// Site Name
+//
+div[id="site-name-wrapper"] {
+  font-weight: 900;
+  font-size: x-large;
+  color: white;
+  mix-blend-mode: difference;
+}
+//
+// styling for all links
+//
+div[id="link-wrapper"] {
+  font-weight: bold;
+  display: flex;
+  p {
+    line-height: 1.4;
+    padding: auto;
+    margin: auto;
+    display: block;
+  }
+
+  a {
+    width: inherit;
+    outline: none;
+    text-decoration: none;
+    // padding: 2px 1px 0;
+
+    display: block;
+    // position: relative;
+    z-index: 1;
+    max-height: 37px;
+    // padding: 2em;
+    // margin: -2em;
+  }
+
+  a:link {
+    color: $link;
+  }
+
+  a:visited {
+    color: $visited;
+  }
+
+  a:focus {
+    // border-bottom: 1px solid;
+    background: $focus;
+  }
+
+  a:hover {
+    // border-bottom: 1px solid;
+    background: $hover;
+    color: black;
+    animation: fadein-out 1s;
+  }
+
+  a:active {
+    background: $active-background;
+    color: $active-color;
+  }
+}
+body {
+  background-color: #000;
+  color: #fff;
+}
+#contentDiv {
+  width: 75%;
+  margin: 0 auto 0 auto;
+}
+//
+// Rainbow animation class
+//
+.animated_rainbow_1 {
+  font-size: 42px;
+  font-family: Arial #000, Gadget, sans-serif;
+  background-image: -webkit-linear-gradient(
+    left,
+    #f00,
+    #ff2b00,
+    #f50,
+    #ff8000,
+    #fa0,
+    #ffd500,
+    #ff0,
+    #d4ff00,
+    #af0,
+    #80ff00,
+    #5f0,
+    #2bff00,
+    #0f0,
+    #00ff2a,
+    #0f5,
+    #00ff80,
+    #0fa,
+    #00ffd5,
+    #0ff,
+    #00d5ff,
+    #0af,
+    #0080ff,
+    #05f,
+    #002aff,
+    #00f,
+    #2b00ff,
+    #50f,
+    #8000ff,
+    #a0f,
+    #d400ff,
+    #f0f,
+    #ff00d4,
+    #f0a,
+    #ff0080,
+    #f05,
+    #ff002b,
+    #f00
+  );
+  -webkit-animation: animatedBackground_a 2s linear infinite alternate;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  background-clip: text;
+}
+@-webkit-keyframes animatedBackground_a {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -500px 0;
+  }
+}
+@keyframes animatedBackground_a {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -500px 0;
+  }
+}
+
