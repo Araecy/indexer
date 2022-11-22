@@ -19,4 +19,4 @@ foreach ($it as $filename) {
 }
 ```
 # WIP!
-..- Database to save state
+* Database to save state
