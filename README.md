@@ -18,3 +18,5 @@ foreach ($it as $filename) {
   // echo filename to get the filename+path for all files in dir!
 }
 ```
+# WIP!
+..- Database to save state
