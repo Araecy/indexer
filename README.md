@@ -15,3 +15,6 @@ foreach ($it as $filename) {
                 if ($filename->isDir() | $filename->getPathname() == ".git" /*file is equal to .gitignore file*/) {
                     continue;
                 }
+                // echo filename to get the filename+path for all files in dir!
+}
+```
